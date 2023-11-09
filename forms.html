@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sedona</title>
+    <link rel="stylesheet" href="css/style.min.css"> 
+  </head> 
+
+  <body>
+    <header class="header container layout-wrapper">
+      <div class="header__logo">
+        <a href="index.html" aria-label="Логотип Sedona">
+          <img src="images/svg/logo.svg" width="185" height="96" alt="Sedona logo">
+        </a>
+      </div> 
+      <nav class="header__nav">
+        <button class="btn header__open-button" type="button" aria-label="Открыть меню"></button>
+        <button class="btn header__close-button hidden" type="button" aria-label="Закрыть меню"></button>
+        <ul class="main-menu hidden">
+          <li class="main-menu__item">
+            <a href="index.html">Главная </a>
+          </li>
+          <li class="main-menu__item">
+            <a href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="main-menu__item main-menu__item--active">
+            <a href="forms.html">Форма отзыва</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+ 
+    <main class="main-page form-page">
+      <section class="hero-formpage container">
+        <div class="hero-formpage__photo">
+          <img width="1200" height="214" src="images/back-form.png" alt="Sedona landscape">
+        </div>
+        <div class="hero-formpage__text layout-wrapper">
+          <h1>Оставьте свой отзыв</h1>
+          <p>Помогите нашим отелям стать лучше! оставьте отзыв о них,
+            а также о посещенных вами достопримечательностях</p>
+        </div>
+      </section>
+
+      <article class="form-wrapper container layout-wrapper" data-form-validate data-callback="base" data-parent-validate="base">
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <section class="text-forms">
+            <fieldset class="text-forms__name-column name-column">
+              <h2>Представьтесь:</h2>
+              <label class="name-column__firstname" for="firstname" c>
+                <span>Имя<sup>*</sup>:</span>
+                <input type="text" id="firstname" name="name" required>
+              </label>
+              <label class="name-column__lastname" for="lastname" data-validate-type="text" data-required>
+                <span>Фамилия<sup>*</sup>:</span>
+                <input type="text" id="lastname" name="lastname" required>
+              </label>
+              <label class="name-column__patronimic" for="patronimic" data-validate-type="text">
+                <span>Отчество:</span>
+                <input type="text" id="patronimic" name="patronimic">
+              </label>
+            </fieldset>
+            <fieldset class="contacts-column">
+              <h2>Контактная информация:</h2>
+              <label class="contacts-column__tel" for="phone" data-validate-type="phone" data-required>
+                <span>Контактный телефон<sup>*</sup>:</span>
+                <input type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+              </label>
+              <label class="contacts-column__email" for="email" data-validate-type="email" data-required>
+                <span>Электронная почта<sup>*</sup>:</span>
+                <input type="email" name="email" id="email" placeholder="Введите e-mail" required>
+              </label>
+            </fieldset>
+          </section>
+
+          <section class="check-forms">
+            <fieldset class="check-forms__radio">
+              <h2>ВАше Общее впечатление:</h2>
+              <ul class="check-forms__radiolist">
+                <li>
+                  <label class="check-forms__label">
+                    <input class="visually-hidden control-input" type="radio" name="experience" value="positive" checked="checked">
+                    <span class="check-forms__radiolist-controlmark"></span>
+                    <span class="check-box__description">Скорее положительное</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="check-forms__label">
+                    <input class="visually-hidden control-input" type="radio" name="experience" value="negative">
+                    <span class="check-forms__radiolist-controlmark"></span>
+                    <span class="check-box__description">Скорее отрицательное</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="check-forms__label">
+                    <input class="visually-hidden control-input" type="radio" name="experience" value="undefined">
+                    <span class="check-forms__radiolist-controlmark"></span>
+                    <span class="check-box__description">Затрудняюсь ответить</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="check-forms__checkbox">
+              <h2>посещенные достопримечательности:</h2>
+              <ul class="check-forms__checkboxlist">
+                <li>
+                  <label class="check-forms__label">
+                    <input class="visually-hidden control-input" type="checkbox" name="devilsbridge" checked="checked">
+                    <span class="check-forms__checkboxlist-controlmark"></span>
+                    <span class="check-box__description">Мост Дьявола</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="check-forms__label">
+                    <input class="visually-hidden control-input" type="checkbox" name="bellmountain" checked="checked">
+                    <span class="check-forms__checkboxlist-controlmark"></span>
+                    <span class="check-box__description">Гора-Колокол</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="check-forms__label">
+                    <input class="visually-hidden control-input" type="checkbox" name="slidepark" checked="checked">
+                    <span class="check-forms__checkboxlist-controlmark"></span>
+                    <span class="check-box__description">Слайд-Парк</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="check-forms__label">
+                    <input class="visually-hidden control-input" type="checkbox" name="redrocks">
+                    <span class="check-forms__checkboxlist-controlmark"></span>
+                    <span class="check-box__description">Красные скалы</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>    
+          </section>
+
+          <section class="comments-form">
+            <h2>Опишите свои эмоции:</h2>
+            <label class="comments-form__form">
+              <textarea name="comments" placeholder="Опишите подробно все свои восторги"></textarea>
+            </label>
+          </section>
+
+          <section class="last-section">
+            <button type="submit" class="btn standard-button last-section__button">Отправить отзыв</button>
+            <div><sup>*</sup>- обязательные поля</div>
+          </section>
+        </form>
+      </article>
+    </main>
+
+    <footer class="footer container layout-wrapper">
+      <div class="footer__logo">
+        <a href="#">
+          <img width="166" height="26" alt="Sedona logo" src="images/SVG/visitsedona.svg">
+        </a>
+      </div>
+      <ul class="footer__social">
+        <li>
+          <a href="vk.com" aria-label="vkontakte">
+            <svg width="24" height="24">
+              <use xlink:href="images/sprite.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="tg.com" aria-label="telegram">
+            <svg width="24" height="24">
+              <use xlink:href="images/sprite.svg#telegram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="youtube.com" aria-label="youtube">
+            <svg width="24" height="24">
+              <use xlink:href="images/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__academy">
+        <a href="#">
+          <span>Разработано</span>
+          <svg width="27" height="35" viewBox="0 0 27 35" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path id="htmlacademy.svg" d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
+            </svg>
+        </a>
+      </div>
+    </footer>
+
+    <section class="modal modal-error modal-closed">
+      <div class="modal__wrapper">
+        <div class="modal-error__error-window error-window">
+          <h2>Что-то пошло не так!</h2>
+          <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="btn standard-button ok-button">Ок</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal modal-success modal-closed">
+      <div class="modal__wrapper">
+        <div class="modal-success__success-window success-window">
+          <h2>Ваш отзыв отправлен</h2>
+          <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          <button class="btn standard-button closewindow-button">Закрыть окно</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/index.js" type="module"></script>
+
+  </body>
+  
+</html>

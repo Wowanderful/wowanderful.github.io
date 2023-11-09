@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sedona</title>
+    <link rel="icon" href="images/favicons/152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/152.png">
+    <!-- <link rel="manifest" href="manifest.webmanifest"> -->
+    <link rel="stylesheet" href="css/style.min.css"> 
+    <link rel="icon" href="favicon.ico">
+
+  </head>
+
+  <body>
+
+    <header class="header container layout-wrapper">
+      <div class="header__logo">
+        <a href="#" aria-label="Логотип Sedona">
+          <img src="images/svg/logo.svg" width="185" height="96" alt="Sedona logo">
+        </a>
+      </div>
+      <nav class="header__nav">
+        <button class="btn header__open-button" type="button" aria-label="Открыть меню"></button>
+        <button class="btn header__close-button hidden" type="button" aria-label="Закрыть меню"></button>
+        <ul class="main-menu hidden">
+          <li class="main-menu__item main-menu__item--active">
+            <a href="index.html">Главная </a>
+          </li>
+          <li class="main-menu__item">
+            <a href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="forms.html">Форма отзыва</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-page first-page">
+      <section class="hero container">
+        <div class="hero__picture-block">
+          <img width="901" height="389" alt="Sedona vista view" src="images/back-desktop.png" srcset="images/back-desktop.jpg@2x.png 2x">
+        </div>
+        <div class="hero__text-block layout-wrapper">
+          <h1>Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h1>
+          <p>Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем гранд каньон!</p>
+        </div>
+      </section>
+
+      <article class="features">
+        <section class="features__highlighted container">
+          <ul class="features__highlighted-list">
+            <li class="features__highlighted-item main-feature">
+              <div class="main-feature__text-part">
+                <h2>Настоящий городок</h2>
+                <span>— №1 —</span>
+                <p>Седона не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
+              </div>
+              <div class="main-feature__image-part">
+                <img width="800" height="256" alt="Picture of the house in Sedona" src="images/photo-city1x.jpg" srcset="images/photo-city2x.jpg 2x">
+              </div>
+            </li>
+            <li class="features__highlighted-item">
+              <ul class="features__legend legend layout-wrapper">
+                <li class="legend__item legend__item--home">
+                  <h3>Жилье</h3>
+                  <p>Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</p></li>
+                <li class="legend__item legend__item--food">
+                  <h3>ЕДА</h3>
+                  <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p> </li>
+                <li class="legend__item legend__item--shopping">
+                  <h3>СУВЕНИРЫ</h3>
+                  <p>Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p></li>
+              </ul>
+            </li>
+            <li class="features__highlighted-item main-feature2">
+              <div class="main-feature2__text-part layout-wrapper">
+                <h2>Там есть Мост дьявола</h2>
+                <span>— №2 —</span>
+                <p>Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, конечно</p>
+              </div>
+              <div class="main-feature2__image-part">
+                <img width="800" height="256" alt="Picture of the devils's bridge natural attraction" src="images/photo-bridge1x.jpg" srcset="images/photo-bridge2x.jpg 2x">
+              </div>
+            </li>           
+          </ul>
+        </section>
+        <section class="features__other container">
+          <ul class="features__other-list layout-wrapper">
+            <li>
+              <h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+              <span>— №3 —</span>
+              <p>Все интересные места находятся очень близко</p>
+            </li>
+            <li>
+              <h2>КРАСИВАЯ ДОРОГА</h2>
+              <span>— №4 —</span>
+              <p>Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</p>
+            </li>
+            <li>
+              <h2>МАЛО ТУРИСТОВ</h2>
+              <span>— №5 —</span>
+              <p>Большинство едет в&nbsp;гранд каньон и&nbsp;толпится там</p>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <section class="promotion container layout-wrapper">
+        <h2>Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;седоне</p>
+        <a class="btn standard-button promotion__button" href="www.booking.com">Найти Гостиницу</a>
+      </section>
+
+      <section class="map container">
+        <div class="map__image-container" id="map">
+          <img width="1200" height="350" alt="Sedona's map" src="images/map-desktop.jpg">
+        </div>
+      </section>
+
+    </main> 
+
+    <footer class="footer container layout-wrapper">
+      <div class="footer__logo">
+        <a href="#">
+          <img width="166" height="26" alt="Sedona logo" src="images/SVG/visitsedona.svg">
+        </a>
+      </div>
+      <ul class="footer__social">
+        <li>
+          <a href="vk.com" aria-label="vkontakte">
+            <svg width="24" height="24">
+              <use xlink:href="images/sprite.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="tg.com" aria-label="telegram">
+            <svg width="24" height="24">
+              <use xlink:href="images/sprite.svg#telegram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="youtube.com" aria-label="youtube">
+            <svg width="24" height="24">
+              <use xlink:href="images/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__academy">
+        <a href="#">
+          <span>Разработано</span>
+          <svg width="27" height="35" viewBox="0 0 27 35" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path id="htmlacademy.svg" d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
+            </svg>
+        </a>
+      </div>
+    </footer>
+
+    <script src="js/index.js" type="module"></script>
+
+  </body>
+
+  
+</html>
+
+
