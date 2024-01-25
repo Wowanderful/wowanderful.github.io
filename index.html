@@ -29,27 +29,30 @@
         </svg>
         <a href="mailto:wowanderful@gmail.com">Vladimir Kravchenko</a>
       </div>
+      
       <nav class="page-nav">
-        <ul>
-          <li>
-            <button type="button" class="themebutton"></button>
-            <span class="popup">Turn to light side</span>
-            <span class="popup-light">Turn to dark side</span>
-          </li>
+        <div class="themes">
+          <button type="button" class="themebutton"></button>
+          <span class="popup">Turn to light side</span>
+          <span class="popup-light">Turn to dark side</span>
+        </div>
+        <button type="button" class="burger-button"></button>
+        <ul class="menu hidden">
+          <button type="button" class="close-menu"></button>
           <li>
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#about">About Me</a>
           </li>
-          <li>
+          <!-- <li>
             <a href="Kravchenko CV fr eng.pdf">CV</a>
-          </li>
+          </li> -->
           <li>
             <a href="https://github.com/Wowanderful">GitHub</a>
           </li>
           <li>
-            <a href="#payment">Payment</a>
+            <a href="#services">Services</a>
           </li>
           <li>
             <a href="#footer">Contacts</a>
@@ -65,18 +68,18 @@
         <div class="hero__introduction layout-wrapper">
           <p class="hero-first-p"><span class="hero__whatis">Hi, my name is</span><span class="hero-name">Vladimir Kravchenko</span></p>
           <p class="hero__whoiam">I am a front-end developer</p>
-          <p class="hero__wherebased">based in Montevideo</p>
+          <p class="hero__wherebased">based in Montevideo, Uruguay</p>
         </div>
         <a class="arrowdown" href="#projects"></a>
       </section>
 
       <section class="projects layout-wrapper" id="projects">
-        <h2>My projects</h2>
+        <h2>Here are some of my recent projects:</h2>
         <ul class="project__list">
           <li class="project__item">
             <a class="project__link" href="#">
               <p class="project__image-container">
-                <!--<img src="" width="" height="" alt=""-->
+                <img src="img/Sedona_screenshot.png" width="300" height="180" alt="Sedona project">
               </p>
               <p>Sedona</p>
             </a>
@@ -84,7 +87,7 @@
           <li class="project__item">
             <a class="project__link" href="#">
               <p class="project__image-container">
-                <!--<img src="" width="" height="" alt=""-->
+                <img src="img/Kekstagram_screenshot.png" width="300" height="180" alt="Kekstagram project">
               </p>
               <p>Kekstagram</p>
             </a>
@@ -92,7 +95,7 @@
           <li class="project__item">
             <a class="project__link" href="#">
               <p class="project__image-container">
-                <!--<img src="" width="" height="" alt=""-->
+                <img src="img/Supergym__screenshot.png" width="300" height="180" alt="Supergym project">
               </p>
               <p>Supergym</p>
             </a>
@@ -133,19 +136,22 @@
               <img src="img/my picture.jpg" width="140" height="140" alt="Photo of Vladimir Kravchenko">
             </div>
           </div>
-          <div class="about__text-block">
+          <div class="about__text-block" data-accordion="parent">
             <div class="about__name">Vladimir Kravchenko</div>
-            <div class="about__skills">
+            <div class="about__item about__skills" data-accordion="element">
               <p class="skills__name">Skills:</p>
-              <p class="skills__description">HTML, CSS, JavaScript, SASS, LESS, React, NodeJS</p>
+              <button type="button" class="about__button button-open" data-accordion="button"></button>
+              <p class="skills__description" data-accordion="content">HTML, CSS, JavaScript, SASS, LESS, React, NodeJS</p>
             </div>
-            <div class="about__soft">
+            <div class="about__item about__soft" data-accordion="element">
               <p class="soft__name">Experienced user:</p>
-              <p class="soft__description">MS Visual Studio Code, Sublime, Photoshop, Figma, Git, GitHub, DevTools, Gulp, Webpack, WordPress</p>
+              <button type="button" class="about__button button-open" data-accordion="button"></button>
+              <p class="soft__description" data-accordion="content">MS Visual Studio Code, Sublime, Photoshop, Figma, Git, GitHub, DevTools, Gulp, Webpack, WordPress</p>
             </div>
-            <div class="about__tech">
-              <p class="tech__name">Using the following technologies:</p>
-              <p class="tech__description">Accessabilty, BEM, Responsive design, Adaptive coding, Mobile first, Desktop first, CMS integration, SPA Development</p>
+            <div class="about__item about__tech" data-accordion="element">
+              <p class="tech__name">Technologies:</p>
+              <button type="button" class="about__button button-open" data-accordion="button"></button>
+              <p class="tech__description" data-accordion="content">Accessibilty, BEM, Responsive design, Adaptive coding, Mobile first, Desktop first, CMS integration, SPA Development</p>
             </div>
             <div class="about__download">
               <a href="Kravchenko CV fr eng.pdf" download>
@@ -157,7 +163,7 @@
         <a class="arrowup" href="#top" aria-label="Up"></a>
       </section>
       
-      <section class="payment layout-wrapper" id="payment">
+      <!-- <section class="payment layout-wrapper" id="payment">
         <div class="payment-wrapper">
           <div class="payment__description">You can trasfer me money to the following accounts:</div>
           <div class="firstlink">
@@ -168,6 +174,15 @@
           </div>
         </div>
         <a class="arrowup" href="#top" aria-label="Up"></a>
+      </section> -->
+
+      <section class="services layout-wrapper" id="services">
+          <div class="services-description">
+            <p class="services__p1">I create websites with my own design or using your template.</p>
+            <p class="services__p2">Please use one of my contacts below to start working with me.</p>
+          </div>
+        <a class="arrowup" href="#top" aria-label="Up"></a>
+        <a class="arrowdownfooter" href="#footer"></a>
       </section>
       
     </main>
@@ -181,10 +196,13 @@
             <a href="https://t.me/wowanderful" class="telegram" aria-label="Telegram"></a>
           </li>
           <li>
-            <a href="tel:+598092538257" class="whatsapp" aria-label="+(598)092-538-257"></a>
+            <a href="https://wa.me/598092538257" class="whatsapp" aria-label="+(598)092-538-257"></a>
           </li>
           <li>
             <a href="mailto:wowanderful@gmail.com" class="footer-email" aria-label="wowanderful@gmail.com"></a>
+          </li>
+          <li>
+            <a href="https://www.paypal.me/wowanderful" class="footer-paypal" aria-label="Paypal"></a>
           </li>
         </ul>
         <div class="footer-logo">
