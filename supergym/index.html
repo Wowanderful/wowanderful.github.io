@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Supergym Fitness Center">
+    <title>Supergym</title>
+
+    <link rel="preload" href="fonts/roboto-condensed-v25-cyrillic_latin-300.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed-v25-cyrillic_latin-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-condensed-v25-cyrillic_latin-700.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/alumni-sans-v16-cyrillic_latin-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/alumni-sans-v16-cyrillic_latin-600.woff2" as="font" crossorigin="anonymous">
+
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+
+  <body>
+
+      <header class="header">
+        <div class="container header__wrapper">
+          <div class="header__upper-block">
+            <a class="header__logo" href="#">
+              <picture>
+                <source media="(min-width:1200px)" srcset="img/svg/logo-desktop.svg" width="122" height="44">
+                <source media="(min-width:768px)" srcset="img/svg/logo-tablet.svg" width="82" height="17">
+                <img src="img/svg/logo-mobile.svg" width="69" height="24" alt="Supergym logo">
+              </picture>
+            </a>
+            <a class="header__phone" href="tel:88005555555">8-800-555-55-55</a>
+          </div>
+          <div class="header__hero-block">
+            <div class="header__hero hero">
+              <h1>Fitness center</h1>
+              <p>Orlando</p>
+              <ul class="hero__list">
+                <li>Gym</li>
+                <li>Group lessons</li>
+                <li>Cardio zone</li>
+              </ul>
+              <a class="btn button-standard hero__buy-button" href="#membership"
+              aria-label="Become a member" tabindex="0">Become a member</a>
+            </div>
+            <div class="header__image">
+              <div class="header__image-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero-image-desktop.webp 1x,
+                  img/hero-image-desktop-2x.webp 2x" width="500" height="556">
+                  <source type="image/webp" srcset="img/hero-image-tablet.webp 1x,
+                  img/hero-image-tablet-2x.webp 2x" width="324" height="390">
+                  <source media="(min-width: 1200px)" srcset="img/hero-image-desktop.jpg 1x,
+                  img/hero-image-desktop-2x.jpg 2x" width="500" height="556">
+                  <img src="img/hero-image-tablet.jpg" width="324" height="390"
+                  srcset="img/hero-image-tablet-2x.jpg  2x" alt="Image of a superman">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main-page">
+
+        <section class="gym"> <!--Блок тренажерные залы-->
+          <div class="gym__wrapper">
+            <div class="gym__element gym-text">
+              <h2>Gym</h2>
+              <strong>Spacious gym with 900 square meters</strong>
+              <div class="gym-text__text">
+                <p>
+                  One of the biggest gyms and an ideal place to strengthen your body and health.
+                  The gym is fully equiped with all neccessary for all athlets.
+                </p>
+                <p>
+                  The gym has a separate Crossfit zone and Cardio zone with treadmills.
+                  We also have several equiped rooms for group lessons.
+                </p>
+              </div>
+            </div>
+            <div class="gym__photo-video photo-video">
+              <div class="gym__element photo-video__photo-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/gym-desktop.webp 1x, img/gym-desktop-2x.webp 2x" width="660" height="401">
+                  <source type="image/webp" media="(min-width:768px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet-2x.webp 2x" width="678" height="345">
+                  <source type="image/webp" srcset="img/gym-tablet.webp 1x, img/gym-tablet-2x.webp 2x" width="678" height="313">
+                  <source media="(min-width: 1200px)" srcset="img/gym-desktop.jpg 1x, img/gym-desktop-2x.jpg 2x" width="660" height="401">
+                  <source media="(min-width:768px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet-2x.jpg 2x" width="678" height="345">
+                  <img src="img/gym-tablet.jpg" srcset="img/gym-tablet-2x.jpg 2x" width="678" height="313" alt="Gym photo">
+                </picture>
+              </div>
+
+              <div class="gym__element photo-video__video-container">
+                <div class="photo-video__video-preload">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/gym-video-desktop.webp"  width="364" height="228">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/gym-video-desktop.webp" width="266" height="167">
+                    <source type="image/webp" srcset="img/gym-video-mobile.webp" width="320" height="167">
+                    <source media="(min-width: 1200px)" srcset="img/gym-video-desktop.png"  width="364" height="228">
+                    <source media="(min-width: 768px)" srcset="img/gym-video-desktop.png" width="266" height="167">
+                    <img  src="img/gym-video-mobile.png" width="320" height="167" alt="Play video">
+                  </picture><button type='button' class="gym__button-play" aria-label="Play video"></button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="membership" id="membership"> <!--Блок Абонементы-->
+          <div class="container membership__wrapper" data-tabs="parent" data-delay="300">
+            <h2>Membership</h2>
+            <div class="membership__controls tab-controls" data-tabs="controls">
+              <button class="tab-controls__month" data-tabs="control" data-index="0"
+              aria-label="Абонементы на 1 месяц">1 month</button>
+              <button class="tab-controls__month" data-tabs="control" data-index="1"
+              aria-label="Абонементы на 6 месяцев">6 months</button>
+              <button class="tab-controls__month" data-tabs="control" data-index="2"
+              aria-label="Абонементы на 12 месяцев">12 months</button>
+            </div>
+
+            <div class="membership__tabs-content" data-tabs="content">
+              <div class="plan-list" data-tabs="element">
+                <div class="membership__plan-card plan" >
+                  <h3>With instructor</h3>
+                  <p>12 monthes</p>
+                  <span>5000</span>
+                  <strong>5000</strong>
+                  <a href="sitemap.html" class="btn button-standard plan__button-plan">КBuy member card</a>
+                </div>
+                <div class="membership__plan-card plan">
+                  <h3>Daily</h3>
+                  <p>From 8 am till 5 pm</p>
+                  <span>1700</span>
+                  <strong>1700</strong>
+                  <a href="sitemap.html" class="btn button-standard plan__button-plan">Buy member card</a>
+                </div>
+                <div class="membership__plan-card plan">
+                  <h3>Full day</h3>
+                  <p>From 8 am till 10 pm</p>
+                  <span>2700</span>
+                  <strong>2700</strong>
+                  <a href="sitemap.html" class="btn button-standard plan__button-plan">Buy member card</a>
+                </div>
+              </div>
+
+              <div class="plan-list" data-tabs="element">
+                <div class="membership__plan-card plan" >
+                  <h3>With instructor</h3>
+                  <p>12 lessons</p>
+                  <span>5000</span>
+                  <strong>5000</strong>
+                  <button type="button" class="button btn button-standard plan__button-plan">Buy member card</button>
+                </div>
+                <div class="membership__plan-card plan">
+                  <h3>Daily</h3>
+                  <p>From 8 am till 5 pm</p>
+                  <span>8000</span>
+                  <strong>8000</strong>
+                  <button type="button" class="button btn button-standard plan__button-plan">Buy member card</button>
+                </div>
+                <div class="membership__plan-card plan">
+                  <h3>Full day</h3>
+                  <p>From 8 am till 10 pm</p>
+                  <span>12000</span>
+                  <strong>12000</strong>
+                  <button type="button" class="button btn button-standard plan__button-plan">Buy member card</button>
+                </div>
+              </div>
+
+              <div class="plan-list" data-tabs="element">
+                <div class="membership__plan-card plan">
+                  <h3>With instructor</h3>
+                  <p>12 lessons</p>
+                  <span>5000</span>
+                  <strong>5000</strong>
+                  <button type="button" class="button btn button-standard plan__button-plan">Buy member card</button>
+                </div>
+                <div class="membership__plan-card plan">
+                  <h3>Daily</h3>
+                  <p>From 8 am till 5 pm</p>
+                  <span>11999</span>
+                  <strong>11999</strong>
+                  <button type="button" class="button btn button-standard plan__button-plan">Buy member card</button>
+                </div>
+                <div class="membership__plan-card plan">
+                  <h3>Full day</h3>
+                  <p>From 8 am till 10 pm</p>
+                  <span>14999</span>
+                  <strong>14999</strong>
+                  <button type="button" class="button btn button-standard plan__button-plan">Buy member card</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="commercial"> <!--Блок Supergames-->
+          <div class="container commercial__wrapper">
+            <div class="commercial__block">
+              <div class="commercial__text supergames">
+                <h2>Super Games</h2>
+                <div class="supergames__dateandtime dateandtime">
+                  <div class="dateandtime__date-column date">
+                    <p>Date</p>
+                    <p class="date__data">
+                      <span>7</span>
+                      <span>March 2023</span>
+                    </p>
+                  </div>
+                  <div class="dateandtime__time-column time">
+                    <p>Time</p>
+                    <p>12:00</p>
+                  </div>
+                </div>
+                <div class="supergames__description">
+                  <p>Annual crossfit games
+                  </p>
+                </div>
+                <a class="button btn button-standard supergames__button-link" href="#">Apply</a>
+              </div>
+              <div class="commercial__photo">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/slpash-desktop.webp 1x, img/splash-desktop-2x.webp 2x" width="660" height="500">
+                  <source type="image/webp" media="(min-width:768px)" srcset="img/splash-tablet.webp 1x, img/splash-tablet-2x.webp 2x" width="386" height="292">
+                  <source type="image/webp" srcset="img/splash-mobile.webp 1x, img/splash-mobile-2x.webp 2x" width="290" height="292">
+                  <source media="(min-width: 1200px)" srcset="img/slpash-desktop.png 1x, img/splash-desktop-2x.png 2x" width="660" height="500">
+                  <source media="(min-width:768px)" srcset="img/splash-tablet.png 1x, img/splash-tablet-2x.png 2x" width="386" height="292">
+                  <img src="img/splash-mobile.png" srcset="img/splash-mobile-2x.png 2x" width="290" height="292" alt="Athletic man breaks the ice">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <section class="coaches"> <!--Раздел Тренеры-->
+          <div class="coaches__wrapper">
+            <h2>Instructors</h2>
+
+            <div class="slider swiper">
+
+              <button class="btn swiper-button-prev slider__swiper-button-prev" tabindex="0" aria-label="List backwards"></button>
+              <button class="btn swiper-button-next slider__swiper-button-next" tabindex="0" aria-label="List forward"></button>
+
+              <div class="swiper-wrapper">
+
+                <div class="slider__item swiper-slide slide" tabindex="0" aria-label="Instructor's description">
+                  <div class="slide__image-container">
+                    <picture>
+                      <source type="image/webp" srcset="img/coach1-desktop.webp 1x, img/coach1-desktop-2x.webp 2x" width="226" height="274">
+                      <img src="img/coach1-desktop.png" srcset="img/coach1-desktop-2x.png 2x" width="226" height="274" alt="Photo of Coach Anna Pavlova">
+                    </picture>
+                    <div class="slide__text-block">
+                      <h4>Anna Pavlova</h4>
+                      <p>Cross Fit</p>
+                      <ul class="slide__list">
+                        <li>Certified Level 3 Trainer</li>
+                        <li>Cross fit champion in Ukraine</li>
+                        <li>6 years experience</li>
+                      </ul>
+                    </div>
+                    <h3>Anna Pavlova</h3>
+                  </div>
+                </div>
+
+                <div class="slider__item swiper-slide slide" tabindex="0" aria-label="Instructor's description">
+                  <div class="slide__image-container">
+                    <picture>
+                      <source type="image/webp" srcset="img/coach2-desktop.webp 1x, img/coach2-desktop-2x.webp 2x" width="226" height="274">
+                      <img src="img/coach2-desktop.png" srcset="img/coach2-desktop-2x.png 2x" width="226" height="274" alt="Photo of coach Ahmed Ali">
+                    </picture>
+                    <div class="slide__text-block">
+                      <h4>Ahmed Ali</h4>
+                      <p>Cross Fit</p>
+                      <ul class="slide__list">
+                        <li>Certified Level 3 Trainer</li>
+                        <li>Crossfit champion in Siria</li>
+                        <li>Experience 6 years</li>
+                      </ul>
+                    </div>
+                    <h3>Ahmed Ali</h3>
+                  </div>
+                </div>
+
+                <div class="slider__item swiper-slide slide" tabindex="0" aria-label="Instructor's description">
+                  <div class="slide__image-container image--3">
+                    <picture>
+                      <source type="image/webp" srcset="img/coach3-desktop.webp 1x, img/coach3-desktop-2x.webp 2x" width="226" height="274">
+                      <img src="img/coach3-desktop.jpg" srcset="img/coach3-desktop-2x.png 2x" width="226" height="274" alt="Photo of coach Jorge Pereira-Martinez">
+                    </picture>
+                    <div class="slide__text-block">
+                      <h4>Jorge Pereira-Martinez</h4>
+                      <p>Cross Fit</p>
+                      <ul class="slide__list">
+                        <li>Certified Level 3 Trainer</li>
+                        <li>Crossfit champion in Florida</li>
+                        <li>Experience 6 years</li>
+                      </ul>
+                    </div>
+                    <h3>Jorge Pereira-Martinez</h3>
+                  </div>
+                </div>
+
+                <div class="slider__item swiper-slide slide" tabindex="0" aria-label="Instructor's description">
+                  <div class="slide__image-container">
+                    <picture>
+                      <source type="image/webp" srcset="img/coach-4-desktop.webp 1x, img/coach4-desktop-2x.webp 2x">
+                      <img src="img/coach-4-desktop.png" srcset="img/coach4-desktop-2x.png 2x" width="226" height="274" alt="Photo of coach Rosita Lopez">
+                    </picture>
+                    <div class="slide__text-block">
+                      <h4>Rosita Lopez</h4>
+                      <p>Cross Fit</p>
+                      <ul class="slide__list">
+                        <li>Certified Level 3 Trainer</li>
+                        <li>Crossfit champion in Florida</li>
+                        <li>Experience 6 years</li>
+                      </ul>
+                    </div>
+                    <h3>Rosita Lopez</h3>
+                  </div>
+                </div>
+
+                <div class="slider__item swiper-slide slide" tabindex="0" aria-label="Instructor's description">
+                  <div class="slide__image-container">
+                    <picture>
+                      <source type="image/webp" srcset="img/coach1-desktop.webp 1x, img/coach1-desktop-2x.webp 2x" width="226" height="274">
+                      <img src="img/coach1-desktop.png" srcset="img/coach1-desktop-2x.png 2x" width="226" height="274" alt="Photo of coach Anna Pavlova">
+                    </picture>
+                    <div class="slide__text-block">
+                      <h4>Anna Pavlova</h4>
+                      <p>Cross Fit</p>
+                      <ul class="slide__list">
+                        <li>Certified Level 3 Trainer</li>
+                        <li>Cross fit champion in Ukraine</li>
+                        <li>6 years experience</li>
+                      </ul>
+                    </div>
+                    <h3>Anna Pavlova</h3>
+                  </div>
+                </div>
+
+                <div class="slider__item swiper-slide slide" tabindex="0" aria-label="Instructor's description">
+                  <div class="slide__image-container">
+                    <picture>
+                      <source type="image/webp" srcset="img/coach2-desktop.webp 1x, img/coach1-desktop-2x.webp 2x" width="226" height="274">
+                      <img src="img/coach2-desktop.png" srcset="img/coach1-desktop-2x.png 2x" width="226" height="274" alt="Photo of coach Ahmed Ali">
+                    </picture>
+                    <div class="slide__text-block">
+                      <h4>Ahmed Ali</p>
+                      <p>Cross Fit</p>
+                      <ul class="slide__list">
+                        <li>Certified Level 3 Trainer</li>
+                        <li>Crossfit champion in Siria</li>
+                        <li>Experience 6 years</li>
+                      </ul>
+                    </div>
+                    <h3>Ahmed Ali</h3>
+                  </div>
+                </div>
+
+                <div class="slider__item swiper-slide slide" tabindex="0" aria-label="Instructor's description">
+                  <div class="slide__image-container image--3">
+                    <picture>
+                      <source type="image/webp" srcset="img/coach3-desktop.webp 1x, img/coach3-desktop-2x.webp 2x" width="226" height="274">
+                      <img src="img/coach3-desktop.jpg" srcset="img/coach3-desktop-2x.png 2x" width="226" height="274" alt="Photo of coach Jorge Pereira-Martinez">
+                    </picture>
+                    <div class="slide__text-block">
+                      <h4>Jorge Pereira-Martinez</h4>
+                      <p>Cross Fit</p>
+                      <ul class="slide__list">
+                        <li>Certified Level 3 Trainer</li>
+                        <li>Crossfit champion in Florida</li>
+                        <li>Experience 6 years</li>
+                      </ul>
+                    </div>
+                    <h3>Jorge Pereira-Martinez</h3>
+                  </div>
+                </div>
+
+                <div class="slider__item swiper-slide slide" tabindex="0" aria-label="Instructor's description">
+                  <div class="slide__image-container">
+                    <picture>
+                      <source type="image/webp" srcset="img/coach-4-desktop.webp 1x, img/coach4-desktop-2x.webp 2x">
+                      <img src="img/coach-4-desktop.png" srcset="img/coach4-desktop-2x.png 2x" width="226" height="274" alt="Photo of coach Rosita Lopez">
+                    </picture>
+                    <div class="slide__text-block">
+                      <h4>Rosita Lopez</h4>
+                      <p>Cross Fit</p>
+                      <ul class="slide__list">
+                        <li>Certified Level 3 Trainer</li>
+                        <li>Crossfit champion in Florida</li>
+                        <li>Experience 6 years</li>
+                      </ul>
+                    </div>
+                    <h3>Rosita Lopez</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="features"> <!--Блок Наши Преимущества-->
+          <div class="features__wrapper">
+            <h2>Our advantages</h2>
+            <ul class="features__list features-list">
+              <li class="features__item feature">
+                <div class="feature__left-column">
+                  <em>900</em>
+                  <sub>sq m</sub>
+                </div>
+                <div class="feature__right-column">
+                  <h3>Space</h3>
+                  <p>Train with no crowds</p>
+                </div>
+              </li>
+              <li class="features__item feature">
+                <div class="feature__left-column">
+                  <em>70</em>
+                  <sub>places</sub>
+                </div>
+                <div class="feature__right-column">
+                  <h3>Our own parking</h3>
+                  <p>You will always find a parking place</p>
+                </div>
+              </li>
+              <li class="features__item feature-highlighted">
+                <div class="feature-highlighted__wrapper">
+                  <p>100</p>
+                  <h3>Machines</h3>
+                  <span>Modern machines for all muscle groups</span>
+                </div>
+              </li>
+              <li class="features__item feature feature--next">
+                <div class="feature__left-column">
+                  <em>350</em>
+                  <sub>places</sub>
+                </div>
+                <div class="feature__right-column">
+                  <h3>Comfort</h3>
+                  <p>Spacious changing rooms, showers, dryers, wifi, water coolers</p>
+                </div>
+              </li>
+              <li class="features__item feature">
+                <div class="feature__left-column">
+                  <em>5+</em>
+                  <sub>years</sub>
+                </div>
+                <div class="feature__right-column">
+                  <h3>Experience of our coaches</h3>
+                  <p>Achieve your goals faster with our instructors</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <aside class="promotions"> <!--Блок Акции-->
+          <div class="container promotions__wrapper">
+            <h2>Promotions</h2>
+            <ul class="promotions__list promotions-list">
+              <li class="promotions-list__item promotion-main">
+                <div class="promotion-main__text-block">
+                  <span>Annual</span>
+                  <strong>4999</strong>
+                  <p>Unlimited membership to the gym</p>
+                  <a href="#" tabindex="0">More info</a>
+                </div>
+                <div class="promotion-main__photo-block">
+                  <picture>
+                    <source type="image/webp"  media="(min-width: 1200px)" srcset="img/lady-desktop.webp 1x, img/lady-desktop-2x.webp 2x" width="280" height="462">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/lady-tablet.webp 1x, img/lady-tablet-2x.webp 2x" width="398" height="462">
+                    <source type="image/webp" srcset="img/lady-mobile.webp 1x, img/lady-mobile-2x.webp 2x" width="290" height="299">
+                    <source media="(min-width: 1200px)" srcset="img/lady-desktop.jpg 1x, img/lady-desktop-2x.jpg 2x" width="280" height="462">
+                    <source media="(min-width: 768px)" srcset="img/lady-tablet.jpg 1x, img/lady-tablet-2x.jpg 2x" width="398" height="462">
+                    <img src="img/lady-mobile.jpg" srcset="img/lady-mobile-2x.jpg 2x" width="290" height="299" alt="Picture of a lady in a blue suit">
+                  </picture>
+                </div>
+              </li>
+              <ul class="promotion-others">
+              <li class="promotions-list__item promotion promotion--1">
+                <h4>Free trial</h4>
+                <p>Bring your friend and get 1 month free</p>
+                <a href="#" tabindex="0">More info</a>
+              </li>
+              <li class="promotions-list__item promotion promotion--2">
+                <h4>20% discount</h4>
+                <p>Corporate team fitness</p>
+                <a href="#" tabindex="0">More info</a>
+              </li>
+              </ul>
+            </ul>
+          </div>
+        </aside>
+
+        <section class="faq"> <!--Блок Вопросы и ответы-->
+          <div class="container faq__wrapper">
+          <h2>Questions and answers</h2>
+
+            <div class="faq__tab-wrapper tab-wrapper" data-tabs="parent">
+
+              <div class="faq__controlblock" data-tabs="controls">
+                <button type="button" class="faq__button btn button-tab" data-tabs="control" data-index="0">Center</button>
+                <button type="button" class="faq__button btn button-tab" data-tabs="control" data-index="1">Membership</button>
+                <button type="button" class="faq__button btn button-tab" data-tabs="control" data-index="2">Services</button>
+                <button type="button" class="faq__button btn button-tab" data-tabs="control" data-index="3">Regulations</button>
+              </div>
+
+              <div class="faq__questionblock" data-tabs="content">
+
+                <div class="faq__question question" data-tabs="element" data-accordion="parent"><!--Вкладка ЦЕНТР-->
+                  <div class="question__answer-wrapper" data-accordion="element">
+                    <p>How to sign-up?</p>
+                    <button class="question__button btn button-open" data-accordion="button" aria-label="More"></button>
+                    <div class="question__answer-text" data-accordion="content">
+                      <p>You can fill in the form and sign a contract at your first visit to our center.
+                        If you buy a membership online, you can fill in the electronic form and you'll recieve the contract by e-mail.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="question__answer-wrapper" data-accordion="element">
+                    <p>Where can I find the schedule?</p>
+                    <button class="question__button btn button-open" data-accordion="button" aria-label="More"></button>
+                    <div class="question__answer-text" data-accordion="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt
+                        ut&nbsp;labore et&nbsp;dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="question__answer-wrapper" data-accordion="element">
+                    <p>Are there water coolers? Do you provide towels?</p>
+                    <button class="question__button btn button-open" data-accordion="button" aria-label="More"></button>
+                    <div class="question__answer-text" data-accordion="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt
+                        ut&nbsp;labore et&nbsp;dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
+                    </div>
+                    </div>
+                    <div class="question__answer-wrapper" data-accordion="element">
+                      <p>How many coaches do you have and what is their experience?</p>
+                      <button class="question__button btn button-open" data-accordion="button" aria-label="More"></button>
+                      <div class="question__answer-text" data-accordion="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt
+                          ut&nbsp;labore et&nbsp;dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
+                      </div>
+                      </div>
+                </div>
+
+                <div class="faq__question question" data-tabs="element" data-accordion="parent"><!--Вкладка АБОНЕМЕНТ-->
+                  <div class="question__answer-wrapper" data-accordion="element">
+                    <p>Are lessons with a coach included in the membership?</p>
+                    <button class="question__button btn button-open" data-accordion="button" aria-label="More"></button>
+                    <div class="question__answer-text" data-accordion="content">
+                      <p>When visiting the gym you need to pay for the coach additionally.
+                        There is always a coach on duty in the gym. You can ask him questions and get a small consultation on the machines
+                        exercise technique.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="question__answer-wrapper" data-accordion="element">
+                    <p>Can I freeze the membership?</p>
+                    <button class="question__button btn button-open" data-accordion="button" aria-label="More"></button>
+                    <div class="question__answer-text" data-accordion="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt
+                      ut&nbsp;labore et&nbsp;dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
+                    </div>
+                  </div>
+                  <div class="question__answer-wrapper" data-accordion="element">
+                    <p>Is there a limit for visits to the gym and group lessons?</p>
+                    <button class="question__button btn button-open" data-accordion="button" aria-label="More"></button>
+                    <div class="question__answer-text" data-accordion="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt
+                        ut&nbsp;labore et&nbsp;dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
+                    </div>
+                  </div>
+                  <div class="question__answer-wrapper" data-accordion="element">
+                    <p>What are the family access and friends access?</p>
+                    <button class="question__button btn button-open" data-accordion="button" aria-label="More"></button>
+                    <div class="question__answer-text" data-accordion="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt
+                        ut&nbsp;labore et&nbsp;dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="faq__question question" data-tabs="element" data-accordion="parent"><!--Вкладка УСЛУГИ-->
+                  <div class="question__answer-wrapper" data-accordion="element">
+                    <p>Do the club offer services on diets and alimentation?</p>
+                    <button class="question__button btn button-open" data-accordion="button" aria-label="More"></button>
+                    <div class="question__answer-text question__answer-text--modify" data-accordion="content">
+                      <p>Yes. You can ask your instructor or our medical staff. The professional will gather your data and goals and
+                        will offer you a personal diet program.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="question__answer-wrapper question__answer-wrapper--modify" data-accordion="element">
+                    <p>Do the club hold any sport events and competitions?</p>
+                    <button class="question__button btn button-open" data-accordion="button" aria-label="More"></button>
+                    <div class="question__answer-text" data-accordion="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt
+                      ut&nbsp;labore et&nbsp;dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
+                    </div>
+                  </div>
+                  <div class="question__answer-wrapper" data-accordion="element">
+                    <p>Can I but sport food in the center?</p>
+                    <button class="question__button btn button-open" data-accordion="button" aria-label="More"></button>
+                    <div class="question__answer-text" data-accordion="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt
+                        ut&nbsp;labore et&nbsp;dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
+                    </div>
+                  </div>
+                  <div class="question__answer-wrapper" data-accordion="element">
+                    <p>Is there a playing room for children?</p>
+                    <button class="question__button btn button-open" data-accordion="button" aria-label="More"></button>
+                    <div class="question__answer-text" data-accordion="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt
+                        ut&nbsp;labore et&nbsp;dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="faq__question question" data-tabs="element" data-accordion="parent"><!--Вкладка ПРАВИЛА-->
+                  <div class="question__answer-wrapper" data-accordion="element">
+                    <p>Is there a special apparel?</p>
+                    <button class="question__button btn button-open" data-accordion="button" aria-label="More"></button>
+                    <div class="question__answer-text" data-accordion="content">
+                      <p>You need to have a closed sport shoes and cloth. Upper and lower parts of your body must be closed (use T-shirts,
+                        sport pants, shorts, sneakers). For your safety it is restricted to train shoeless, in beach shoes or slippers (there are
+                        exceptions for special classes, such as yoga and pylates).
+                      </p>
+                    </div>
+                  </div>
+                  <div class="question__answer-wrapper" data-accordion="element">
+                    <p>Can I bring a child with me?</p>
+                    <button class="question__button btn button-open" data-accordion="button" aria-label="More"></button>
+                    <div class="question__answer-text" data-accordion="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt
+                        ut&nbsp;labore et&nbsp;dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
+                    </div>
+                  </div>
+                  <div class="question__answer-wrapper" data-accordion="element">
+                    <p>What are the other rules of visiting the gym?</p>
+                    <button class="question__button btn button-open" data-accordion="button" aria-label="More"></button>
+                    <div class="question__answer-text" data-accordion="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt
+                        ut&nbsp;labore et&nbsp;dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
+                    </div>
+                  </div>
+                  <div class="question__answer-wrapper" data-accordion="element">
+                    <p>Do I need a medical letter to visit the gym or the pool?</p>
+                    <button class="question__button btn button-open" data-accordion="button" aria-label="More"></button>
+                    <div class="question__answer-text" data-accordion="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt
+                        ut&nbsp;labore et&nbsp;dolore magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="feedback"> <!--Блок Отзывы-->
+          <div class="container feedback__wrapper">
+            <h2>Feedback</h2>
+            <div class="feedback__slider swiper feedback__feedback-slider">
+              <div class="swiper-wrapper feedback__feedback-slider-wrapper ">
+                <div class="swiper-slide feedback-slide">
+                  <h3>Ruth Horwatz</h3>
+                  <p>I visit this gym for more than a year. I like it that it's always clean,
+                    machines being reniewed, friendly staff. Much space, no queus even in the evening time.
+                  </p>
+                </div>
+                <div class="swiper-slide feedback-slide">
+                  <h3>Jo Bidan</h3>
+                  <p>&laquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor
+                    incididunt ut&nbsp;labore et&nbsp;dolore magna aliqua.&raquo;</p>
+                </div>
+              </div>
+              <button class="btn swiper-button-prev feedback__button-prev" aria-label="List backwards" tabindex="0"></button>
+              <button class="btn swiper-button-next feedback__button-next" aria-label="List forward" tabindex="0"></button>
+            </div>
+          </div>
+        </section>
+
+        <div class="lower-block">
+          <div class="lower-block__wrapper">
+            <section class="free"> <!--Блок Бесплатное занятие-->
+
+              <div class="free__form-container" data-form-validate data-callback="base">
+                <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off" enctype="multipart/form-data">
+                  <div class="free__form-wrapper">
+                    <h2>Get Free lessons</h2>
+                    <div class="free__name-wrapper">
+                      <label data-required data-validate-type="text" data-limitation="name"
+                      data-message-base="Field required" data-message-extra="Restricted symbols">
+                        <input type="text" name="name" id="name-form" placeholder="Name" aria-label="Name" required>
+                      </label>
+                    </div>
+                    <div class="free__tel-wrapper">
+                      <label data-required data-validate-type="phone" data-message-base="Field required"
+                      data-message-extra="Restricted symbols">
+                        <input type="tel" name="phone" id="phone-form" placeholder="Phone" aria-label="Phone" required>
+                      </label>
+                    </div>
+                    <button type="submit" class="button btn button-standard free__button-send">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </section>
+
+          <section class="contacts"> <!--Блок Контакты-->
+            <h2>Contacts</h2>
+              <div class="contacts__wrapper">
+                <div class="contacts__item contacts__address-block">
+                  <div class="address-block__item address">
+                    <h3>Адрес</h3>
+                    <p>1190 George Washington Ave.</p>
+                  </div>
+                  <div class="address-block__item schedule">
+                    <h3>Schedule</h3>
+                    <p>Mo-Fr: 8 am - 10pm</p>
+                  </div>
+                </div>
+                <div class="contacts__phone-block">
+                  <div class="phone-block__item phone">
+                    <h3>Phone</h3>
+                    <a href="tel:88005555555">8-800-555-55-55</a>
+                  </div>
+                  <div class="phone-block__item email">
+                    <h3>Email</h3>
+                    <a href="mailto:omsk@supergym.ru">my@supergym.com</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer__wrapper">
+          <div class="footer__footer-logo">
+            <a href="https://wowanderful.github.io">Back to homepage
+              <!-- <picture>
+                <source media="(min-width:1200px)" srcset="img/svg/logo-footer-desktop.svg" width="88" height="32">
+                <source media="(min-width:768px)" srcset="img/svg/logo-footer-tablet.svg" width="78" height="18">
+                <img src="img/svg/logo-footer-mobile.svg" width="68" height="15" alt="Supergym logo">
+              </picture> -->
+            </a>
+          </div>
+          <nav class="footer__menu">
+            <ul class="footer__item footer-nav">
+              <li class="footer-nav__element-1">
+                <a href="#">Services</a>
+              </li>
+              <li class="footer-nav__element-2">
+                <a href="#">Membership</a>
+              </li>
+              <li class="footer-nav__element-3">
+                <a href="#">Promotions</a>
+              </li>
+              <li class="footer-nav__element-4">
+                <a href="#">Coaches</a>
+              </li>
+              <li class="footer-nav__element-5">
+                <a href="#">Shedule</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="footer__social footer-social">
+            <li>
+              <a class="footer-social__link footer-social__link--vk" href="vk.com" aria-label="Вконтакте">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="#030A1A">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer-social__link footer-social__link--ok" href="ok.ru" aria-label="Одноклассники">
+                <svg width="10" height="18" viewBox="0 0 14 22" fill="#030A1A">
+                  <use xlink:href="img/sprite.svg#odnoklassniki"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer-social__link footer-social__link--reddit" href="reddit.com" aria-label="Reddit">
+                <svg width="15" height="18" viewBox="0 0 20 22" fill="#030A1A">
+                  <use xlink:href="img/sprite.svg#Reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js" type="module"></script>
+
+  </body>
+
+</html>
