@@ -1555,23 +1555,23 @@ button.swiper-pagination-bullet {
   right: -47px;
   top: -9px;
   background-color: transparent;
-  background-image: url("../../img/svg/open-default.svg");
+  background-image: url("../img/svg/open-default.svg");
   background-repeat: no-repeat;
 }
 @media (hover: hover) {
   .button-open:hover:not(.focus-visible) {
-    background-image: url("../../img/svg/open-hover.svg");
+    background-image: url("../img/svg/open-hover.svg");
     opacity: 1;
     outline: none;
   }
 }
 .button-open.focus-visible:focus {
-  background-image: url("../../img/svg/open-hover.svg");
+  background-image: url("../img/svg/open-hover.svg");
   opacity: 1;
   outline: none;
 }
 .button-open:disabled {
-  background-image: url("../../img/svg/open-disabled.svg");
+  background-image: url("../img/svg/open-disabled.svg");
 }
 @media (max-width: 1365px) {
   .button-open {
@@ -1600,17 +1600,17 @@ button.swiper-pagination-bullet {
   right: -45px;
   top: -4px;
   background-color: transparent;
-  background-image: url("../../img/svg/close.svg");
+  background-image: url("../img/svg/close.svg");
   background-repeat: no-repeat;
 }
 @media (hover: hover) {
   .button--close:hover:not(.focus-visible) {
-    background-image: url("../../img/svg/close.svg");
+    background-image: url("../img/svg/close.svg");
     opacity: 1;
   }
 }
 .button--close.focus-visible:focus {
-  background-image: url("../../img/svg/close.svg");
+  background-image: url("../img/svg/close.svg");
   opacity: 1;
 }
 @media (max-width: 1365px) {
@@ -2684,7 +2684,7 @@ button.swiper-pagination-bullet {
   border-radius: 50%;
   border: none;
   background-color: transparent;
-  background-image: url("../../img/playbutton.png");
+  background-image: url("../img/playbutton.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -2709,18 +2709,18 @@ button.swiper-pagination-bullet {
   }
 }
 .gym__button-play:disabled {
-  background-image: url("../../img/playbutton-disabled.png");
+  background-image: url("../img/playbutton-disabled.png");
 }
 @media (hover: hover) {
   .gym__button-play:hover:not(.focus-visible) {
-    background-image: url("../../img/playbutton-hover.png");
+    background-image: url("../img/playbutton-hover.png");
   }
 }
 .gym__button-play.focus-visible:focus {
-  background-image: url("../../img/playbutton-hover.png");
+  background-image: url("../img/playbutton-hover.png");
 }
 .gym__button-play.focus-visible:active {
-  background-image: url("../../img/playbutton-hover.png");
+  background-image: url("../img/playbutton-hover.png");
 }
 
 .gym-text {
@@ -3027,7 +3027,7 @@ button.swiper-pagination-bullet {
   content: "";
   width: 285px;
   height: 353px;
-  background-image: url("../../img/weight.png");
+  background-image: url("../img/weight.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -3039,7 +3039,7 @@ button.swiper-pagination-bullet {
     width: 341px;
     height: 403px;
     bottom: -104px;
-    background-image: url("../../img/weight-tablet.png");
+    background-image: url("../img/weight-tablet.png");
     right: 0;
   }
 }
@@ -3631,7 +3631,7 @@ button.swiper-pagination-bullet {
   content: "";
   width: 30px;
   height: 42px;
-  background-image: url("../../img/svg/ruble.svg");
+  background-image: url("../img/svg/ruble.svg");
   background-repeat: no-repeat;
   top: -7px;
   right: -43px;
@@ -4308,7 +4308,7 @@ button.swiper-pagination-bullet {
   content: "";
   width: 56px;
   height: 56px;
-  background-image: url("../../img/svg/arrow-left.svg");
+  background-image: url("../img/svg/arrow-left.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30%;
@@ -4406,7 +4406,7 @@ button.swiper-pagination-bullet {
   content: "";
   width: 56px;
   height: 56px;
-  background-image: url("../../img/svg/arrow-right.svg");
+  background-image: url("../img/svg/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30%;
@@ -4424,7 +4424,7 @@ button.swiper-pagination-bullet {
 
 .slider__swiper-button-next:active::after {
   z-index: 11;
-  background-image: url("../../img/svg/arrow-left-white.svg");
+  background-image: url("../img/svg/arrow-left-white.svg");
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -4432,7 +4432,7 @@ button.swiper-pagination-bullet {
 
 .slider__swiper-button-prev:active::after {
   z-index: 11;
-  background-image: url("../../img/svg/arrow-left-white.svg");
+  background-image: url("../img/svg/arrow-left-white.svg");
 }
 
 .swiper-wrapper {
@@ -6033,7 +6033,7 @@ button.swiper-pagination-bullet {
   content: "";
   width: 56px;
   height: 56px;
-  background-image: url("../../img/svg/arrow-left.svg");
+  background-image: url("../img/svg/arrow-left.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30%;
@@ -6090,7 +6090,7 @@ button.swiper-pagination-bullet {
   content: "";
   width: 56px;
   height: 56px;
-  background-image: url("../../img/svg/arrow-right.svg");
+  background-image: url("../img/svg/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30%;
@@ -6143,7 +6143,7 @@ button.swiper-pagination-bullet {
 
 .feedback__button-next:active::after {
   z-index: 11;
-  background-image: url("../../img/svg/arrow-left-white.svg");
+  background-image: url("../img/svg/arrow-left-white.svg");
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -6151,7 +6151,7 @@ button.swiper-pagination-bullet {
 
 .feedback__button-prev:active::after {
   z-index: 11;
-  background-image: url("../../img/svg/arrow-left-white.svg");
+  background-image: url("../img/svg/arrow-left-white.svg");
 }
 
 .feedback-slide {
@@ -6170,7 +6170,7 @@ button.swiper-pagination-bullet {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 53px;
-  background-image: url("../../img/author-desktop.png");
+  background-image: url("../img/author-desktop.png");
   background-repeat: no-repeat;
   background-position: 58px 50px;
   margin-left: -10px;
@@ -7311,7 +7311,7 @@ button.swiper-pagination-bullet {
 .footer-social__link--vk:hover,
 .footer-social__link--vk:focus,
 .footer-social__link--vk:active {
-  background-image: url("../../img/svg/vk-white.svg");
+  background-image: url("../img/svg/vk-white.svg");
   background-repeat: no-repeat;
   background-position: center;
   outline: none;
@@ -7320,7 +7320,7 @@ button.swiper-pagination-bullet {
 .footer-social__link--ok:hover,
 .footer-social__link--ok:focus,
 .footer-social__link--ok:active {
-  background-image: url("../../img/svg/odnoklassniki-white.svg");
+  background-image: url("../img/svg/odnoklassniki-white.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40%;
@@ -7330,7 +7330,7 @@ button.swiper-pagination-bullet {
 .footer-social__link--reddit:hover,
 .footer-social__link--reddit:focus,
 .footer-social__link--reddit:active {
-  background-image: url("../../img/svg/Reddit-white.svg");
+  background-image: url("../img/svg/Reddit-white.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
