@@ -2,18 +2,18 @@ const mapBlock = document.querySelector('.map-image');
 mapBlock.classList.remove('map-image--nojs');
 
 var mapOptions = {
-  center: [45.5055,-122.6782],
-  zoom: 16
+  center: [45.5137, 45.4926],
+  zoom: 18
 }
 
 var iconOptions = {
-  iconUrl: '../../img/Map-pin.svg',
+  iconUrl: '../img/Map-pin.svg',
   iconSize: [38, 50]
 }
 
 var map = L.map('map', mapOptions);
 
-var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+var layer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 
 map.addLayer(layer);
 
