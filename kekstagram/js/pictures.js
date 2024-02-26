@@ -1,3 +1,5 @@
+import {drawPictures, getRandomInteger} from './moc.js'
+
 const parent = document.querySelector('.pictures');
 const template = document.querySelector('#picture').content.querySelector('.picture');
 const fragment = document.createDocumentFragment();
@@ -21,6 +23,8 @@ const renderSimilarPhoto = (photo) => {
 
   parent.appendChild(fragment);
 };
+
+renderSimilarPhoto(drawPictures());
 
 export {renderSimilarPhoto};
 

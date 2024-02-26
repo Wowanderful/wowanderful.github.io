@@ -1,4 +1,5 @@
 import {renderSimilarPhoto} from './pictures.js';
+import {drawPictures, getRandomInteger} from './moc.js'
 
 let commentsShown = 0;
 const COMMENTSPERPORTION = 5;
@@ -107,5 +108,6 @@ const renderGallery = (somePictures) => {
   });
   renderSimilarPhoto(somePictures);
 };
+
 
 export {renderGallery};
